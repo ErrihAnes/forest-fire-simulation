@@ -48,5 +48,13 @@ public class Cell {
         }
 
     }
+    public char stateToChar(){
+        switch(state){
+            case VEGETATION:  return 'V';
+            case FIRE:  return 'F';
+            case ASH:  return 'A';
+            default:  return '!';
+        }
+    }
 
 }

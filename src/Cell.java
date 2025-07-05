@@ -50,7 +50,7 @@ public class Cell {
     }
     public char stateToChar(){
         switch(state){
-            case VEGETATION:  return 'V';
+            case VEGETATION:  return '.';
             case FIRE:  return 'F';
             case ASH:  return 'A';
             default:  return '!';

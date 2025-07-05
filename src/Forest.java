@@ -34,7 +34,7 @@ public class Forest {
     // enflamer une case :
     public boolean setFire(int x, int y){
         if(isPositionValid(x, y)){
-            forest[x][y].setState(State.FIRE);
+            forest[y][x].setState(State.FIRE);
             return true;
         }
         return false;
@@ -42,7 +42,7 @@ public class Forest {
     // recuperer une case de la foret avec des coordonnée donnée:
     public Cell getCell(int x, int y){
         if(isPositionValid(x, y)){
-            return forest[x][y];
+            return forest[y][x];
         }
         return null;
     }

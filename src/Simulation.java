@@ -5,12 +5,14 @@ public class Simulation {
     private double probability;
     private Random random;
 
+    // constructeur
     public Simulation(Forest _forest, double _probability) {
         this.forest = _forest;
         this.probability = _probability;
         this.random = new Random();
 
     }
+    // verifier si il y'a encore du feu
     private boolean hasFire(){
         for (int y = 0; y< forest.getHeight(); y++){
             for (int x = 0; x< forest.getWidth(); x++){
@@ -21,7 +23,7 @@ public class Simulation {
         }
         return false;
     }
-
+    // cloner la matrice (foret) :
     private Forest copyForest(Forest _forest){
         Forest copy = new Forest(forest.getWidth(), forest.getHeight());
         for (int y = 0; y< forest.getHeight(); y++){
@@ -31,6 +33,7 @@ public class Simulation {
         }
         return copy;
     }
+    // Propager le feu aux voisines
     private void Propagate(int x, int y, Forest newForest) {
 
         int[][] directions = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
@@ -49,6 +52,7 @@ public class Simulation {
             }
         }
     }
+
     public void simulate() {
         int step = 1;
 

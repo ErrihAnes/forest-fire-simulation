@@ -27,7 +27,7 @@ public class Forest {
     }
 
     // vérifier la position dans la matrice :
-    public boolean isPositionValid(int x, int y){
+    private boolean isPositionValid(int x, int y){
         return (x>= 0 && x< width) && (y>=0 && y< height);
     }
 

@@ -46,7 +46,9 @@ public class Forest {
         }
         return null;
     }
+
     //afichage temp de la matrice (foret) :
+
     public void display(){
         System.out.println("Forest : ");
         for(int i = 0; i<height; i++){

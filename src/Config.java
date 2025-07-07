@@ -78,7 +78,7 @@ public class Config {
     }
 
     public void display() {
-        System.out.println("Configuration :");
+        System.out.println("Config :");
         System.out.println("- Dimensions : " + width + "x" + height);
         System.out.println("- Probabilité : " + probability);
         System.out.println("- Feux initiaux :");

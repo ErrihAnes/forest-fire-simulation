@@ -11,7 +11,7 @@ public class Main {
             forest.setFire(fire[0], fire[1]);
         }
 
-        System.out.println("État initial");
+        System.out.println("État initial : ");
         forest.display();
 
         Simulation simulation = new Simulation(forest, config.getProbability());
